@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 35vh 65vh;
+      grid-template-rows: 35vh 65vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'gc gd' 'bc bc';
+}
+
+.global-cases, .global-deaths {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% auto;
+      grid-template-rows: 20% auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'ttl ttl' 'day totl';
+  background-color: #e77b7b;
+  margin: 14px;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 15px #b8373752;
+          box-shadow: 6px 6px 15px #b8373752;
+}
+
+.global-cases {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: gc;
+  margin-right: 7px;
+}
+
+.global-deaths {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: gd;
+  margin-left: 7px;
+}
+
+.by-country {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: bc;
+  overflow-y: scroll;
+}
+
+.by-country input {
+  margin: 25px;
+}
+
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ttl;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.daily {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: day;
+}
+
+.total {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: totl;
+}
+
+p, h1 {
+  padding: 2vw 3vw;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3vh;
+}
+
+table {
+  padding: 25px;
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  font-weight: bold;
+}
+
+td {
+  padding-top: 7px 5px;
+}
+
+th {
+  background: #f7a2a2;
+  padding-bottom: 7px;
+  font-size: larger;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+tbody:nth-child(even) {
+  background: #ccc;
+}
+
+tbody:nth-child(odd) {
+  background: #fff;
+}
+
+tbody:hover {
+  background: #fdb9b9;
+}
+/*# sourceMappingURL=style.css.map */
