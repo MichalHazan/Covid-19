@@ -21,7 +21,7 @@ const displayCountriesTable = () => {
         </tr>
     </thead>
     `
-    const filterCountries = countries.filter(country => country.Country.includes(inp.value))
+    const filterCountries = countries.filter(country => country.Country.toLowerCase().includes(inp.value.toLowerCase()))
 
     for (const country of filterCountries) {
 
