@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 *{
     margin: 0%;
     box-sizing: border-box;
@@ -24,6 +25,7 @@
     margin: 14px;
     border-radius: 20px ;
     box-shadow: 6px 6px 15px #b8373752;
+    padding: 10px;
 
 
 }
@@ -35,7 +37,6 @@
 .global-deaths{
     grid-area: gd;
     margin-left: 7px;
-
 
 }
 .by-country{
@@ -61,7 +62,7 @@
     grid-area: totl;
 }
 p,h1{
-    padding: 2vw 3vw;
+    padding: 1vw 2vw;
     text-align: center;
     font-weight: bolder;
     font-size: 3vh;
@@ -85,6 +86,16 @@ th{
     font-size: larger;
     position: sticky;
     top: 0;
+    i{
+        visibility: hidden;
+    }
+    
+}
+th:hover{
+    cursor: pointer;
+    i{
+        visibility: visible;
+    }
 }
 
 tbody:nth-child(even){
